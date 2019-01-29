@@ -1,4 +1,4 @@
-# ubuntu lxde-desktop
+# ubuntu-lxde-owasp
 
 ## os
 
@@ -11,7 +11,7 @@ LXDE
 ## include
 
 * owasp zap 2.7.0
-* jmetor 5.0
+* jmeter 5.0
 
 ## Usage (example)
 
