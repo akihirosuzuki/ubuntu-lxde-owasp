@@ -13,6 +13,6 @@ LXDE
 * owasp zap 2.7.0
 * jmetor 5.0
 
-## Usage
+## Usage (example)
 
-docker run -p 5901:5901 --env USER=devuser -m 2048m kerokero/ubuntu-lxde-owasp:latest  bash -c "vncserver :1 -geometry 1280x800 -depth 24 && tail -F /home/devuser/.vnc/*.log"
+docker run -it -p 5901:5901 --env USER=devuser -m 2048m erwinuy/ubuntu-lxde-owasp:latest bash -c "vncserver :1 -geometry 1280x800 -depth 24 && tail -F /home/devuser/.vnc/*.log"
