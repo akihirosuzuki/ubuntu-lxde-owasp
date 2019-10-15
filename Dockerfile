@@ -40,10 +40,10 @@ RUN mkdir ${HOME}/.vnc && echo "#!/bin/bash" > ~/.vnc/xstartup && \
     chmod 755 ~/.vnc/xstartup
 
 
-ENV ZAPVER 2.7.0
-ENV JMETORVER 5.0
+ENV ZAPVER 2.8.1
+ENV JMETORVER 5.1.1
 
-RUN wget -q https://github.com/zaproxy/zaproxy/releases/download/${ZAPVER}/ZAP_${ZAPVER}_Linux.tar.gz && \
+RUN wget -q https://github.com/zaproxy/zaproxy/releases/download/v${ZAPVER}/ZAP_${ZAPVER}_Linux.tar.gz && \
 tar zxf ZAP_${ZAPVER}_Linux.tar.gz && rm ZAP_${ZAPVER}_Linux.tar.gz
 
 RUN wget -q http://ftp.jaist.ac.jp/pub/apache/jmeter/binaries/apache-jmeter-${JMETORVER}.tgz && \
